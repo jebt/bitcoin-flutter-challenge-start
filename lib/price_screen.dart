@@ -9,7 +9,7 @@ class PriceScreen extends StatefulWidget {
 }
 
 class _PriceScreenState extends State<PriceScreen> {
-  String selectedCurrency = currenciesList[0];
+  String selectedCurrency = currenciesList[0]; //todo: change default to EUR or USD
   Map<String, String> data;
 
   Widget getPicker() {
@@ -94,6 +94,7 @@ class _PriceScreenState extends State<PriceScreen> {
 
   @override
   Widget build(BuildContext context) {
+    //todo: improve aesthetics like the button
     return Scaffold(
       appBar: AppBar(
         title: Text('🤑 Coin Ticker'),

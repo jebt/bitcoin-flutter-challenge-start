@@ -53,6 +53,7 @@ class CoinData {
       dynamic decoded = jsonDecode(response.body);
       return decoded['rate'];
     } else {
+      //todo: in case of 429, too many request, give something like a popup warning
       throw 'Problem with the GET request';
     }
   }
